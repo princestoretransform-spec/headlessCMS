@@ -83,9 +83,9 @@ export default function HireDevelopers({
         </div>
       </div>
 
-    <style jsx>{`
+   <style jsx>{`
   .hire-section {
-    background: #000;
+    background: linear-gradient(180deg, #000000 0%, #0b0b0b 100%);
     padding: 100px 0;
     color: #fff;
   }
@@ -97,59 +97,69 @@ export default function HireDevelopers({
     text-align: center;
   }
 
-  /* Heading White Proper */
   .hire-header h2 {
-    font-size: 42px;
+    font-size: 44px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #ffffff;
   }
 
-  /* Description Light White */
   .hire-header p {
-    max-width: 800px;
+    max-width: 820px;
     margin: 0 auto 70px;
     font-size: 18px;
     line-height: 1.7;
-    color: #d1d1d1;
+    color: #d4d4d4;
   }
 
   .hire-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
+    gap: 40px;
   }
 
-  /*  Card Proper White Background */
+  /* CARD DESIGN */
   .hire-card {
-    background: #ffffff; !important;
-    border-radius: 18px;
-    padding: 24px 30px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 26px 35px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 22px;
     text-decoration: none;
-    transition: 0.3s ease;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
   }
 
-
-  /*  Icon Size */
+  /* Icon */
   .hire-card img {
     width: 60px;
     height: 60px;
     object-fit: contain;
+    transition: transform 0.3s ease;
   }
 
-  /*  Card Text Proper Black */
+  /* Text */
   .hire-card h5 {
     font-size: 20px;
     font-weight: 600;
-    color: #111111;
+    color: #111;
+    transition: color 0.3s ease;
   }
 
+  /* HOVER EFFECT */
   .hire-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(255, 75, 43, 0.25);
+    background: #ffffff;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(255, 75, 43, 0.25);
+  }
+
+  .hire-card:hover img {
+    transform: scale(1.1);
+  }
+
+  .hire-card:hover h5 {
+    color: #ff4b2b;
   }
 
   /* Tablet */
@@ -163,6 +173,11 @@ export default function HireDevelopers({
   @media (max-width: 600px) {
     .hire-grid {
       grid-template-columns: 1fr;
+    }
+
+    .hire-card {
+      justify-content: center;
+      text-align: center;
     }
   }
 `}</style>
