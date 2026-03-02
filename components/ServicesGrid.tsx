@@ -22,7 +22,7 @@ const ServicesGrid = ({
   const defaultServices: ServiceItem[] = [
     {
       custom_web_design_our_process_heading: "IT Consultation",
-      custom_web_design_our_process_text_content: "Navigate the complex world of technology with our expert guidance. We help you create a clear, future-proof strategy that aligns with your business goals.\r\n\r\n<a href=\"/contact-us/\">Read More</a>"
+      custom_web_design_our_process_text_content: "Navigate the complex world of technology with our expert guidance. We help you create a clear, future-proof strategy that aligns with your business goals.\r\n\r\n<a href=\"/contact-us/\"> <br><br> Read More</a>"
     },
     {
       custom_web_design_our_process_heading: "Ai-Powered Services",
