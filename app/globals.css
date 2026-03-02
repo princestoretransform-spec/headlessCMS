@@ -67,8 +67,8 @@ body {
 }
 
 .hire-card img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -112,98 +112,79 @@ body {
 /* ===== HireDevelopers.tsx  END ===== */
 
 /* ===== WhyChooseUs.tsx  ===== */
-
-.why-section {
+.why-final-section {
   background: #f3f3f3;
-  padding: 100px 0;
+  padding: 110px 0;
 }
 
-.why-container {
+.why-final-container {
   width: 90%;
   max-width: 1300px;
   margin: auto;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 70px;
   align-items: center;
 }
 
 /* LEFT CONTENT */
 
-.why-left h2 {
-  font-size: 42px;
+.why-final-left h2 {
+  font-size: 44px;
   font-weight: 700;
   margin-bottom: 25px;
   color: #111;
 }
 
-.why-left h2 span {
+.why-final-left h2 span {
   color: #ff4b2b;
 }
 
-.why-left p {
+.why-final-left p {
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #444;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-/* RIGHT GRID */
+/* RIGHT IMAGE */
 
-.why-right {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.why-card {
-  background: #e9e9e9;
-  padding: 35px;
-  border-radius: 20px;
+.why-final-right {
   display: flex;
-  align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
 }
 
-.why-card img {
-  max-width: 120px;
+.why-final-right img {
+  width: 100%;
+  max-width: 550px;
   height: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-/* HOVER */
-
-.why-card:hover {
-  background: #ffffff;
-  transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.why-card:hover img {
-  transform: scale(1.08);
+  border-radius: 25px;
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
-  .why-container {
+  .why-final-container {
     grid-template-columns: 1fr;
+    gap: 50px;
   }
 
-  .why-right {
-    grid-template-columns: repeat(2, 1fr);
+  .why-final-left h2 {
+    font-size: 36px;
+  }
+
+  .why-final-right img {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
-  .why-right {
-    grid-template-columns: 1fr;
+  .why-final-left h2 {
+    font-size: 30px;
   }
 
-  .why-left h2 {
-    font-size: 32px;
+  .why-final-left p {
+    font-size: 16px;
   }
 }
 /* ===== WhyChooseUs.tsx END ===== */
