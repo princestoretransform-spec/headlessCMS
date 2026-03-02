@@ -108,7 +108,5 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .hire-card {
-    justify-content: center;
-  }
+ 
 }
