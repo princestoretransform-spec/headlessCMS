@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="hero-bg">
         <div className="hero-overlay"></div>
 
-        <div className="hero-content">
+        <div className="hero-content"> 
           <p className="hero-welcome">
             Welcome to Store Transform
           </p>
@@ -32,12 +32,13 @@ export default function HeroSection() {
       <style jsx>{`
         /* Exact banner height (header = 90px approx) */
         .hero-wrapper {
-          width: 100%;
+  // height: calc(100vh - 92px);
+  // align-items: center;
         }
 
         .hero-bg {
           position: relative;
-          height: 70%;
+           min-height: 60vh;
           width: 100%;
           background-image: url("https://storetransform.com/wp-content/uploads/2025/12/United-st.gif");
           background-size: cover;
@@ -66,12 +67,13 @@ export default function HeroSection() {
           text-align: center;
           color: white;
           padding: 0 20px;
+          // gap: 10px;
         }
 
         .hero-welcome {
           font-size: 18px;
           font-weight: 500;
-          margin-bottom: 18px;
+          // margin-bottom: 18px;
           letter-spacing: 0.5px;
         }
 
@@ -80,7 +82,7 @@ export default function HeroSection() {
           font-size: 56px;
           font-weight: 700;
           line-height: 1.2;
-          margin-bottom: 22px;
+          // margin-bottom: 22px;
         }
 
         .hero-heading span {
@@ -92,28 +94,14 @@ export default function HeroSection() {
           font-size: 20px;
           max-width: 900px;
           line-height: 1.6;
-          margin-bottom: 38px;
+          // margin-bottom: 38px;
         }
 
         .hero-subtext span {
           color: #ff4b2b;
         }
 
-        .hero-btn {
-          background: #ff4b2b;
-          padding: 14px 36px;
-          border-radius: 6px;
-          font-size: 18px;
-          font-weight: 500;
-          color: white;
-          text-decoration: none;
-          transition: 0.3s ease;
-        }
-
-        .hero-btn:hover {
-          background: #e63e1f;
-        }
-
+       
         /* Responsive */
         @media (max-width: 992px) {
           .hero-heading {
@@ -133,4 +121,4 @@ export default function HeroSection() {
       `}</style>
     </section>
   );
-}
+}   
