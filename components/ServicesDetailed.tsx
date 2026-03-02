@@ -23,41 +23,41 @@ export default function ServicesDetailed() {
     {
       image: "https://storetransform.com/wp-content/uploads/2025/12/sb-works.webp",
       title: "Home Decor Industry",
-      text: "Implemented comprehensive SEO strategies for the Superior Brand website. Conducted competitor analysis and keyword research to identify opportunities, resulting in a significant boost in organic traffic and improved search visibility."
+      text: "Implemented comprehensive SEO strategies for the Superior Brand website. Conducted thorough competitor analysis and keyword research to identify opportunities, resulting in a significant boost in organic traffic and improved search visibility."
     }
   ];
 
   return (
-    <section className="work-section">
-      <div className="work-container">
+    <section className="work-simple-section">
+      <div className="work-simple-container">
 
-        {/* Title */}
-        <div className="work-header">
+        <div className="work-simple-header">
           <h2>Our Work</h2>
           <p>
             We transform innovative ideas into powerful digital realities.
-            Explore our work to see how we've helped businesses achieve
-            their vision through our work.
+            Explore our work to see how we've helped businesses achieve their
+            vision through our work.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="work-grid">
+        <div className="work-simple-grid">
           {services.map((item, index) => (
-            <div className="work-card" key={index}>
-              <div className="work-image">
+            <div className="work-simple-card" key={index}>
+              
+              <div className="work-simple-image">
                 <Image
                   src={item.image}
                   alt={item.title}
-                  width={400}
-                  height={250}
+                  width={350}
+                  height={220}
                 />
               </div>
 
-              <div className="work-content">
+              <div className="work-simple-content">
                 <h4>{item.title}</h4>
                 <p>{item.text}</p>
               </div>
+
             </div>
           ))}
         </div>

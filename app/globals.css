@@ -191,40 +191,40 @@ body {
 
 /* ===== ServicesDetailed.tsx ===== */
 
-.work-section {
-  background: #f3f3f3;
-  padding: 110px 0;
+.work-simple-section {
+  background: #f2f2f2;
+  padding: 100px 0;
 }
 
-.work-container {
+.work-simple-container {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: auto;
 }
 
-.work-header {
+.work-simple-header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
-.work-header h2 {
-  font-size: 42px;
+.work-simple-header h2 {
+  font-size: 38px;
   font-weight: 700;
   margin-bottom: 15px;
   color: #111;
 }
 
-.work-header p {
-  max-width: 750px;
+.work-simple-header p {
+  max-width: 700px;
   margin: auto;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.8;
   color: #444;
 }
 
 /* GRID */
 
-.work-grid {
+.work-simple-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
@@ -232,37 +232,29 @@ body {
 
 /* CARD */
 
-.work-card {
+.work-simple-card {
   background: #e9e9e9;
-  border-radius: 20px;
-  padding: 35px;
+  border-radius: 18px;
+  padding: 30px;
   display: flex;
-  gap: 30px;
   align-items: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  gap: 30px;
 }
 
-.work-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 35px rgba(0,0,0,0.12);
-}
-
-.work-image img {
+.work-simple-image img {
   width: 220px;
   height: auto;
-  object-fit: contain;
 }
 
-.work-content h4 {
-  font-size: 20px;
+.work-simple-content h4 {
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: #111;
 }
 
-.work-content p {
-  font-size: 15px;
+.work-simple-content p {
+  font-size: 14px;
   line-height: 1.7;
   color: #444;
 }
@@ -270,17 +262,18 @@ body {
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
-  .work-grid {
+  .work-simple-grid {
     grid-template-columns: 1fr;
   }
 
-  .work-card {
+  .work-simple-card {
     flex-direction: column;
     text-align: center;
   }
 
-  .work-image img {
+  .work-simple-image img {
     width: 200px;
   }
 }
+
 /* ===== ServicesDetailed.tsx END ===== */
