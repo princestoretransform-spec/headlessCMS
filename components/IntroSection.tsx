@@ -42,7 +42,6 @@ export default function IntroSection() {
 
       <style jsx>{`
         .services-section {
-          background: #f3f3f3;
           padding: 90px 0;
         }
 
