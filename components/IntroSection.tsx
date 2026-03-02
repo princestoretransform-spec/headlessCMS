@@ -101,7 +101,7 @@ export default function IntroSection() {
         /* Responsive */
         @media (max-width: 992px) {
           .services-container {
-            flex-direction: column;
+            flex-direction: column-reverse;
           }
 
           .services-left h2 {
@@ -116,3 +116,4 @@ export default function IntroSection() {
     </section>
   );
 }
+
