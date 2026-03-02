@@ -289,17 +289,19 @@ body {
 /* ===== Testimonials.tsx ===== */
 .testimonial-section {
   position: relative;
-  padding: 100px 20px;
-  background: url('/your-background-image.jpg') center/cover no-repeat;
+  padding: 120px 20px 100px;
+  background: url('https://storetransform.com/wp-content/uploads/2025/12/testimonial-bg.webp') center center / cover no-repeat;
   color: white;
 }
 
+/* DARK OVERLAY */
 .testimonial-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.75);
 }
 
+/* CONTAINER */
 .testimonial-container {
   position: relative;
   max-width: 1200px;
@@ -314,45 +316,50 @@ body {
 }
 
 .testimonial-header h2 {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .testimonial-header p {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
   color: #ddd;
+  font-size: 16px;
 }
 
-/* CARD */
+/* CARD DESIGN */
 .testimonial-card {
   background: #e9e9e9;
   padding: 35px;
-  border-radius: 25px;
+  border-radius: 30px;
   border: 2px solid #ff4d2d;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
   color: #222;
-  min-height: 300px;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.testimonial-text {
+.testimonial-card p {
   font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 25px;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
 
-.testimonial-name {
-  font-weight: 700;
+.testimonial-card h5 {
   font-size: 18px;
+  font-weight: 700;
 }
 
-/* PAGINATION DOTS */
+/* PAGINATION */
+.swiper-pagination {
+  margin-top: 30px;
+}
+
 .swiper-pagination-bullet {
-  background: #ccc;
+  background: #bbb;
   opacity: 1;
 }
 
@@ -368,6 +375,7 @@ body {
 
   .testimonial-card {
     padding: 25px;
+    min-height: auto;
   }
 }
 /* ===== Testimonials.tsx END ===== */
