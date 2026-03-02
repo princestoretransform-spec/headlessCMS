@@ -191,32 +191,34 @@ body {
 
 /* ===== ServicesDetailed.tsx ===== */
 
+
 .work-simple-section {
-  background: #f2f2f2;
-  padding: 100px 0;
+  padding: 110px 0;
 }
 
 .work-simple-container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+/* HEADER */
 
 .work-simple-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .work-simple-header h2 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 700;
-  margin-bottom: 15px;
   color: #111;
+  margin-bottom: 15px;
 }
 
 .work-simple-header p {
-  max-width: 700px;
-  margin: auto;
+  max-width: 750px;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 1.8;
   color: #444;
@@ -227,41 +229,46 @@ body {
 .work-simple-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 25px;
 }
 
 /* CARD */
 
 .work-simple-card {
-  background: #e9e9e9;
-  border-radius: 18px;
-  padding: 30px;
+  border-radius: 24px;
+  padding: 25px 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
+
+  border: 1px solid #e6e6e6;        /* soft border */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06); /* light shadow */
 }
+
+/* IMAGE */
 
 .work-simple-image img {
-  width: 220px;
+  width: 230px;
   height: auto;
+  object-fit: contain;
 }
 
+/* CONTENT */
+
 .work-simple-content h4 {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 600;
-  margin-bottom: 10px;
-  color: #111;
 }
 
 .work-simple-content p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #444;
+  font-size: 15.5px;
+  line-height: 1.8;
 }
 
 /* RESPONSIVE */
 
 @media (max-width: 992px) {
+
   .work-simple-grid {
     grid-template-columns: 1fr;
   }
@@ -274,6 +281,6 @@ body {
   .work-simple-image img {
     width: 200px;
   }
-}
 
+}
 /* ===== ServicesDetailed.tsx END ===== */
