@@ -16,7 +16,7 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
-/* ===== HIRE SECTION ===== */
+/* ===== HireDevelopers.tsx ===== */
 
 .hire-section {
   background: linear-gradient(180deg, #000000 0%, #0c0c0c 100%);
@@ -110,3 +110,4 @@ body {
 
  
 }
+/* ===== HireDevelopers.tsx  END ===== */
