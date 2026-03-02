@@ -30,7 +30,12 @@ export default function HeroSection() {
       </div>
 
       <style jsx>{`
-      
+        /* Exact banner height (header = 90px approx) */
+        .hero-wrapper {
+  // height: calc(100vh - 92px);
+  // align-items: center;
+        }
+
         .hero-bg {
           position: relative;
            min-height: 60vh;
@@ -41,6 +46,7 @@ export default function HeroSection() {
           background-repeat: no-repeat;
         }
           
+
         /* Exact overlay darkness */
         .hero-overlay {
           position: absolute;
