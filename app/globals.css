@@ -188,3 +188,99 @@ body {
   }
 }
 /* ===== WhyChooseUs.tsx END ===== */
+
+/* ===== ServicesDetailed.tsx ===== */
+
+.work-section {
+  background: #f3f3f3;
+  padding: 110px 0;
+}
+
+.work-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.work-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.work-header h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.work-header p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* GRID */
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+
+.work-card {
+  background: #e9e9e9;
+  border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.work-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
+
+.work-image img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+}
+
+.work-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.work-content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .work-image img {
+    width: 200px;
+  }
+}
+/* ===== ServicesDetailed.tsx END ===== */
