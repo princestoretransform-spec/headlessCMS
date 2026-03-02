@@ -23,7 +23,7 @@ export default function HeroSection() {
             New Heights Together
           </p>
 
-          <a href="#" className="bt-btn chat-boat-btn">
+          <a href="#" className="bt-btn chat-boat-btn p_top">
             Get Instant Assistance
           </a>
         </div>
@@ -45,7 +45,11 @@ export default function HeroSection() {
           background-position: center;
           background-repeat: no-repeat;
         }
-
+          
+        .p_top{
+        padding-top: 10px;
+        }
+        
         /* Exact overlay darkness */
         .hero-overlay {
           position: absolute;
