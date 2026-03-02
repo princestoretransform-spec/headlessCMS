@@ -290,6 +290,10 @@ body {
   position: relative;
 }
 
+/* TOP IMAGE SECTION */.testimonial-wrapper {
+  position: relative;
+}
+
 /* TOP IMAGE SECTION */
 .testimonial-top {
   position: relative;
