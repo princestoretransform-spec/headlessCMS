@@ -40,88 +40,79 @@ export default function IntroSection() {
         </div>
       </div>
 
-     <style jsx>{`
-  .hire-section {
-    background: #000;
-    padding: 100px 0;
-    color: #fff;
-  }
+      <style jsx>{`
+        .services-section {
+          padding: 90px 0;
+        }
 
-  .hire-container {
-    width: 90%;
-    max-width: 1300px;
-    margin: auto;
-    text-align: center;
-  }
+        .services-container {
+          width: 90%;
+          max-width: 1300px;
+          margin: auto;
+          display: flex;
+          gap: 70px;
+          align-items: center;
+        }
 
-  /* Heading White Proper */
-  .hire-header h2 {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffffff;
-  }
+        .services-left {
+          flex: 1;
+        }
 
-  /* Description Light White */
-  .hire-header p {
-    max-width: 800px;
-    margin: 0 auto 70px;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #d1d1d1;
-  }
+        .services-left h2 {
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 1.3;
+          margin-bottom: 25px;
+        }
 
-  .hire-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-  }
+        .services-left h2 span {
+          color: #ff4b2b;
+        }
 
-  /* Card Proper White Background */
-  .hire-card {
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 24px 30px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-decoration: none;
-    transition: 0.3s ease;
-  }
+        .services-left p {
+          font-size: 18px;
+          line-height: 1.7;
+          margin-bottom: 20px;
+          color: #333;
+        }
 
-  /* Icon Size */
-  .hire-card img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-  }
+        .services-right {
+          flex: 1;
+        }
 
-  /* Card Text Proper Black */
-  .hire-card h5 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #111111;
-  }
+        .top-row {
+          display: flex;
+          gap: 25px;
+          margin-bottom: 25px;
+        }
 
-  .hire-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(255, 75, 43, 0.25);
-  }
+        .top-row img {
+          width: 100%;
+          border-radius: 16px;
+          object-fit: cover;
+        }
 
-  /* Tablet */
-  @media (max-width: 992px) {
-    .hire-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+        .bottom-row img {
+          width: 100%;
+          border-radius: 16px;
+          object-fit: cover;
+        }
 
-  /* Mobile */
-  @media (max-width: 600px) {
-    .hire-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-`}</style>
+        /* Responsive */
+        @media (max-width: 992px) {
+          .services-container {
+            flex-direction: column-reverse;
+          }
+
+          .services-left h2 {
+            font-size: 30px;
+          }
+
+          .top-row {
+            flex-direction: column;
+          }
+        }
+      `}</style>
     </section>
   );
 }

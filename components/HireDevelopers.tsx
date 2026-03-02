@@ -83,86 +83,88 @@ export default function HireDevelopers({
         </div>
       </div>
 
-      <style jsx>{`
-        .hire-section {
-          background: #000;
-          padding: 90px 0;
-          color: #fff;
-        }
+    <style jsx>{`
+  .hire-section {
+    background: #000;
+    padding: 100px 0;
+    color: #fff;
+  }
 
-        .hire-container {
-          width: 90%;
-          max-width: 1300px;
-          margin: auto;
-          text-align: center;
-        }
+  .hire-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+  }
 
-        .hire-header h2 {
-          font-size: 42px;
-          font-weight: 700;
-          margin-bottom: 15px;
-        }
+  /* Heading White Proper */
+  .hire-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
 
-        .hire-header p {
-          max-width: 800px;
-          margin: 0 auto 60px;
-          font-size: 18px;
-          line-height: 1.6;
-          color: #ccc;
-        }
+  /* Description Light White */
+  .hire-header p {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d1d1d1;
+  }
 
-        .hire-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 35px;
-        }
+  .hire-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
 
-        .hire-card {
-          background: #f3f3f3;
-          border-radius: 18px;
-          padding: 22px 30px;
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          text-decoration: none;
-          color: #000;
-          transition: 0.3s ease;
-        }
+  /*  Card Proper White Background */
+  .hire-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
 
-        .hire-card img {
-          width: 55px;
-          height: 55px;
-          object-fit: contain;
-        }
+  /*  Icon Size */
+  .hire-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
 
-        .hire-card h5 {
-          font-size: 20px;
-          font-weight: 600;
-        }
+  /*  Card Text Proper Black */
+  .hire-card h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111111;
+  }
 
-        .hire-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-        }
+  .hire-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(255, 75, 43, 0.25);
+  }
 
-        /* Tablet */
-        @media (max-width: 992px) {
-          .hire-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
+  /* Tablet */
+  @media (max-width: 992px) {
+    .hire-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
-        /* Mobile */
-        @media (max-width: 600px) {
-          .hire-grid {
-            grid-template-columns: 1fr;
-          }
-
-          .hire-card {
-            justify-content: center;
-          }
-        }
-      `}</style>
+  /* Mobile */
+  @media (max-width: 600px) {
+    .hire-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+`}</style>
     </section>
   );
 }
