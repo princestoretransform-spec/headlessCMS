@@ -32,7 +32,6 @@ export default function HeroSection() {
       <style jsx>{`
         /* Exact banner height (header = 90px approx) */
         .hero-wrapper {
-          height: calc(100vh - 90px);
           width: 100%;
         }
 
