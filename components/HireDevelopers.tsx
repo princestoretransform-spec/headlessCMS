@@ -122,7 +122,7 @@ export default function HireDevelopers({
 
   /*  Card Proper White Background */
   .hire-card {
-    background: #ffffff;
+    background: #ffffff; !important;
     border-radius: 18px;
     padding: 24px 30px;
     display: flex;
@@ -132,16 +132,6 @@ export default function HireDevelopers({
     transition: 0.3s ease;
   }
 
-  jsx-242a7cc74f140839 hire-grid hire-card  {
-    text-decoration: none;
-    display: inline-block;
-    word-break: break-word;
-    background-color: #fff;
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 15px;
-    padding: 15px;
-}
 
   /*  Icon Size */
   .hire-card img {
