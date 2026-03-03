@@ -11,48 +11,49 @@ const Testimonials = () => {
 
   const reviews = [
     {
+      review: `One of the best experiences I had with any Magento development team so far. Highly dedicated Store Transform team of experienced professionals that are committed to deliver the highest standards of services.
+
+If you are looking for a genuine resource for your next project, look no further. All the very best.`,
+      name: "Sebastian Clarke"
+    },
+    {
+      review: `Store Transform really took our Magento project to the next level with clever design & on-point creativity. They clearly understood my targeted demographic, turned my site into rocking shopping experience !!!
+
+I will look forward to work with him in a future on new projects.`,
+      name: "Garcia Taylor"
+    },
+    {
       review: `Working with Store transform team has been a complete pleasure. They posses enough skills to understand our core needs & functionalities, created highly customized Magento Store for our e-commerce business.
 
 I really look forward to continuing relationship with him, definitely recommend him for our new projects.`,
       name: "Francisco Wilson"
-    },
-    {
-      review: `Store Transform team exceeded all of my expectations. They not only perform required tasks quickly, but also does research, spends time in understanding our entire project, and suggesting us clever alternatives where needed.
-
-Will rehire again for further work.`,
-      name: "Zachary Moore"
-    },
-    {
-      review: `Store Transform is an excellent development team. They are extremely creative with a great technical sensibility. They clearly understood our business goals or objectives, design a beautiful Magento Ecommerce store for us.
-
-I am very happy with their work and will definitely hire them for next job.`,
-      name: "Robinson Walker"
     }
   ];
 
   return (
-    <section className="testimonial-wrapper">
+    <section className="testimonial-section">
 
-      {/* TOP IMAGE AREA */}
+      {/* TOP IMAGE PART */}
       <div className="testimonial-top">
-        <div className="overlay"></div>
+        <div className="testimonial-overlay"></div>
 
         <div className="testimonial-heading">
           <h2>What Our Clients Say</h2>
           <p>
-            Our happy clients are our greatest advocates - hear how we’ve transformed their success stories!
+            Our happy clients are our greatest advocates - hear how we’ve transformed their success stories! Let me know if you'd like more options!
           </p>
         </div>
       </div>
 
-      {/* BOTTOM WHITE AREA */}
+      {/* WHITE BACKGROUND PART */}
       <div className="testimonial-bottom">
+
         <div className="testimonial-slider">
 
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
-            autoplay={{ delay: 4000 }}
+            autoplay={{ delay: 4500 }}
             pagination={{ clickable: true }}
             loop={true}
             breakpoints={{
