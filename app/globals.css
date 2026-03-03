@@ -405,12 +405,14 @@ body {
 
 @media (max-width: 768px) {
 
-  .testimonial-bg {
+  /* .testimonial-bg {
     height: 320px;
     position: unset;
-  }
+  } */
 
-  .testimonial-heading h2 {
+
+
+  /* .testimonial-heading h2 {
     font-size: 28px;
   }
 
@@ -420,7 +422,7 @@ body {
 
   .testimonial-slider-area {
     margin-top: -130px;
-  }
+  } */
 }
 
 /* ===== Testimonials.tsx END ===== */
